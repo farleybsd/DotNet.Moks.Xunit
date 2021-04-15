@@ -7,3 +7,12 @@ C:\Users\copacabana_alura\Source\Repos\testes-integracao\src\Alura.CoisasAFazer.
 C:\Users\copacabana_alura\Source\Repos\testes-integracao\src\Alura.CoisasAFazer.Core\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Core.AssemblyInfo.cs
 C:\Users\copacabana_alura\Source\Repos\testes-integracao\src\Alura.CoisasAFazer.Core\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Core.dll
 C:\Users\copacabana_alura\Source\Repos\testes-integracao\src\Alura.CoisasAFazer.Core\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Core.pdb
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Core\bin\Debug\netstandard2.0\Alura.CoisasAFazer.Core.deps.json
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Core\bin\Debug\netstandard2.0\Alura.CoisasAFazer.Core.dll
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Core\bin\Debug\netstandard2.0\Alura.CoisasAFazer.Core.pdb
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Core\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Core.csprojAssemblyReference.cache
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Core\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Core.AssemblyInfoInputs.cache
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Core\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Core.AssemblyInfo.cs
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Core\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Core.csproj.CoreCompileInputs.cache
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Core\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Core.dll
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Core\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Core.pdb

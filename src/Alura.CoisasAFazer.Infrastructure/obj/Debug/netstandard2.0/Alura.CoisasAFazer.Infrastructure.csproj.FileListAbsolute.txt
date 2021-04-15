@@ -10,3 +10,15 @@ C:\Users\copacabana_alura\Source\Repos\testes-integracao\src\Alura.CoisasAFazer.
 C:\Users\copacabana_alura\Source\Repos\testes-integracao\src\Alura.CoisasAFazer.Infrastructure\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Infrastructure.csproj.CopyComplete
 C:\Users\copacabana_alura\Source\Repos\testes-integracao\src\Alura.CoisasAFazer.Infrastructure\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Infrastructure.dll
 C:\Users\copacabana_alura\Source\Repos\testes-integracao\src\Alura.CoisasAFazer.Infrastructure\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Infrastructure.pdb
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Infrastructure\bin\Debug\netstandard2.0\Alura.CoisasAFazer.Infrastructure.deps.json
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Infrastructure\bin\Debug\netstandard2.0\Alura.CoisasAFazer.Infrastructure.dll
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Infrastructure\bin\Debug\netstandard2.0\Alura.CoisasAFazer.Infrastructure.pdb
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Infrastructure\bin\Debug\netstandard2.0\Alura.CoisasAFazer.Core.dll
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Infrastructure\bin\Debug\netstandard2.0\Alura.CoisasAFazer.Core.pdb
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Infrastructure\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Infrastructure.csprojAssemblyReference.cache
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Infrastructure\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Infrastructure.AssemblyInfoInputs.cache
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Infrastructure\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Infrastructure.AssemblyInfo.cs
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Infrastructure\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Infrastructure.csproj.CoreCompileInputs.cache
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Infrastructure\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Infrastructure.csproj.CopyComplete
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Infrastructure\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Infrastructure.dll
+C:\MyGit\DotNet.Moks.Xunit\src\Alura.CoisasAFazer.Infrastructure\obj\Debug\netstandard2.0\Alura.CoisasAFazer.Infrastructure.pdb
