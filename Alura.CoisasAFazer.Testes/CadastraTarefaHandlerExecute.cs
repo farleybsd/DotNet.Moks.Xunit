@@ -2,6 +2,7 @@ using Alura.CoisasAFazer.Core.Commands;
 using Alura.CoisasAFazer.Core.Models;
 using Alura.CoisasAFazer.Services.Handlers;
 using System;
+using System.Linq;
 using Xunit;
 
 namespace Alura.CoisasAFazer.Testes
@@ -13,13 +14,16 @@ namespace Alura.CoisasAFazer.Testes
         {
             //arrange
             var comando = new CadastraTarefa("Estudar Xunit",new Categoria("Estudo"),new DateTime(2019,12,31));
-            var handler = new CadastraTarefaHandler();
+            var repo = new RepositorioFake();
+
+            var handler = new CadastraTarefaHandler(repo);
 
             //act
             handler.Execute(comando);
 
             //assert
-            Assert.True(true);
+            var tarefas = repo.ObtemTarefas(t => t.Titulo == "Estudar Xunit").FirstOrDefault();
+            Assert.NotNull(tarefas);
         }
     }
 }
