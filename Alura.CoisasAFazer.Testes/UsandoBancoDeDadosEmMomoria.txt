@@ -1,0 +1,2 @@
+﻿Instalando Banco de Dados em Memoria via Nuguet (Instalar Apenas no projeto de Teste)
+Microsoft.EntityFrameWorkCore.InMemory
