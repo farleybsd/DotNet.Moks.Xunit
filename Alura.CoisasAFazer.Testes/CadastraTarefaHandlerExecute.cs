@@ -66,6 +66,10 @@ namespace Alura.CoisasAFazer.Testes
         [Fact]
         public void QuandoExeceptionForLancadaDeveLogarAMensagemDaExcecao()
         {
+            var mensagemErroEsperada = "Houve Um Eroo na Inclusao de Tarefas";
+
+            var excecaoEsperada = new Exception(mensagemErroEsperada);
+
             //arrange
             var comando = new CadastraTarefa("Estudar Xunit", new Categoria("Estudo"), new DateTime(2019, 12, 31));
             //var repo = new RepositorioFake(); //Dublê para o teste
@@ -75,7 +79,7 @@ namespace Alura.CoisasAFazer.Testes
             var mockLog = new Mock<ILogger<CadastraTarefaHandler>>();
 
             mock.Setup(r => r.IncluirTarefas(It.IsAny<Tarefa[]>()))// parametro com os dados para o metodo IncluirTarefas
-                .Throws(new Exception("Houve Um Eroo na Inclusao de Tarefas"));
+                .Throws(excecaoEsperada);
 
             var repo = mock.Object;
             var handler = new CadastraTarefaHandler(repo,mockLog.Object);
@@ -84,7 +88,16 @@ namespace Alura.CoisasAFazer.Testes
             CommandResult resultado = handler.Execute(comando);
 
             //Assert
-            mockLog.Verify(l => l.LogError("Houve Um Eroo na Inclusao de Tarefas"),Times.Exactly(1));
+            mockLog.Verify(l => 
+            l.Log(
+                    LogLevel.Error, // nível de log => LogError
+                    It.IsAny<EventId>(), // identificador do evento
+                    It.IsAny<object>(),// objeto que sera logado
+                    excecaoEsperada, // excecao que sera logada
+                    It.IsAny<Func<object,Exception,string>>() // funcao que converte objeto + exceção em string
+                ), 
+                Times.Once()
+                );
         }
     }
 }
