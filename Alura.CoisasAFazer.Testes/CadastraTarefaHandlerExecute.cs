@@ -56,5 +56,27 @@ namespace Alura.CoisasAFazer.Testes
             //assert
             Assert.False(resultado.IsSuccess);
         }
+
+        [Fact]
+        public void QuandoExeceptionForLancadaDeveLogarAMensagemDaExcecao()
+        {
+            //arrange
+            var comando = new CadastraTarefa("Estudar Xunit", new Categoria("Estudo"), new DateTime(2019, 12, 31));
+            //var repo = new RepositorioFake(); //Dublê para o teste
+
+            var mock = new Mock<IRepositorioTarefas>();
+
+            mock.Setup(r => r.IncluirTarefas(It.IsAny<Tarefa[]>()))// parametro com os dados para o metodo IncluirTarefas
+                .Throws(new Exception("Houve Um Eroo na Inclusao de Tarefas"));
+
+            var repo = mock.Object;
+            var handler = new CadastraTarefaHandler(repo);
+
+            //act
+            CommandResult resultado = handler.Execute(comando);
+
+            //Assert
+
+        }
     }
 }
