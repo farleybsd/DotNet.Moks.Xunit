@@ -15,36 +15,36 @@ namespace Alura.CoisasAFazer.Services.Handlers
         {
         }
 
-        public CadastraTarefaHandler(IRepositorioTarefas repositorio)
+        public CadastraTarefaHandler(IRepositorioTarefas repositorio, ILogger<CadastraTarefaHandler> logger)                              
         {
             _repo = repositorio;
-            _logger = new LoggerFactory().CreateLogger<CadastraTarefaHandler>();
+            _logger =logger;
         }
 
-        public CommandResult Execute(CadastraTarefa comando)
+    public CommandResult Execute(CadastraTarefa comando)
+    {
+        try
         {
-            try
-            {
-                var tarefa = new Tarefa
-            (
-                id: 0,
-                titulo: comando.Titulo,
-                prazo: comando.Prazo,
-                categoria: comando.Categoria,
-                concluidaEm: null,
-                status: StatusTarefa.Criada
-            );
-                _logger.LogDebug("Persistindo a tarefa...");
-                _repo.IncluirTarefas(tarefa);
+            var tarefa = new Tarefa
+        (
+            id: 0,
+            titulo: comando.Titulo,
+            prazo: comando.Prazo,
+            categoria: comando.Categoria,
+            concluidaEm: null,
+            status: StatusTarefa.Criada
+        );
+            _logger.LogDebug("Persistindo a tarefa...");
+            _repo.IncluirTarefas(tarefa);
 
-                return new CommandResult(true);
-            }
-            catch (Exception e)
-            {
-                return new CommandResult(false);
-               
-            }
+            return new CommandResult(true);
+        }
+        catch (Exception e)
+        {
+            return new CommandResult(false);
 
         }
+
     }
+}
 }
