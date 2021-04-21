@@ -46,5 +46,30 @@ namespace Alura.CoisasAFazer.Testes
             //assert
             Assert.IsType<OkResult>(retorno); //200
         }
+
+        [Fact]
+        public void QuandoExcecaoLancadaDeveRetorna500()
+        {
+            //arrange
+            var mokLogger = new Mock<ILogger<CadastraTarefaHandler>>();
+            var mok = new Mock<IRepositorioTarefas>();
+            mok.Setup(r => r.ObtemCategoriaPorId(20)).Returns(new Categoria(20,"Estudo"));
+            mok.Setup(r => r.IncluirTarefas(It.IsAny<Tarefa>())).Throws(new Exception("Houve um Erro"));
+            var repo = mok.Object;
+            var controlador = new TarefasController(repo, mokLogger.Object);
+
+            var model = new CadastraTarefaVM()
+            {
+                IdCategoria = 20,
+                Titulo = "Estudar Xunit",
+                Prazo = new DateTime(2019, 12, 31)
+            };
+            //act
+            var retorno = controlador.EndpointCadastraTarefa(model);
+            //assert
+            Assert.IsType<StatusCodeResult>(retorno); //400
+            var statusCodeRetornado = (retorno as StatusCodeResult).StatusCode;
+            Assert.Equal(500,statusCodeRetornado);
+        }
     }
 }
